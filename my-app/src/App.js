@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, } from 'react-router-dom';
-import SingleUser from './Pages/SingleUser';
+import Admin from './Pages/allUsers/Admin';
+import SingleUser from './Pages/singleUser/SingleUser';
 
 
 export default function App() {
@@ -8,6 +9,7 @@ export default function App() {
     <div>
       <BrowserRouter>
         <>
+        <Route path="/" exact component={Admin} />
         <Route path="/:id" exact component={SingleUser} />
         </>
       </BrowserRouter>
