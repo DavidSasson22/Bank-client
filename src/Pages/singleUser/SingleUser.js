@@ -13,7 +13,7 @@ export default function SingleUser(props) {
 
   useEffect(() => {
     const getUserData = async () => {
-      setUserData(await axios.get(`${baseURL}${url}`));
+      setUserData(await axios.get(`${baseURL}/${url}`));
     }
     getUserData()
   }, [url])
