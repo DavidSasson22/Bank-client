@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import './style.css'
 
-const baseURL = 'https://david-bank-api.herokuapp.com/api/users/';
+const baseURL = 'https://david-bank-api.herokuapp.com/api/users';
 
 
 export default function SingleUser(props) {
